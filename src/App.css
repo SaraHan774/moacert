@@ -1,0 +1,26 @@
+.App-title {
+  text-align: center;
+}
+
+.App-body {
+  margin: 30px;
+  border-style: double;
+  padding: 30px;
+  border-color: cadetblue;
+  border-radius: 30px;
+}
+
+.App-link {
+  color: cadetblue;
+}
+
+button {
+  color: cadetblue;
+  font-size: medium;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
