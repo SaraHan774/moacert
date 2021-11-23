@@ -22,11 +22,16 @@
   background-color: white;
 }
 
-.Button-close-selector {
+.Button-selector-close {
   position: inherit;
   bottom: 20px;
   right: 20px;
-  color: black;
+}
+
+.Button-selector-choose {
+  position: inherit;
+  bottom: 20px;
+  left: 20px;
 }
 
 #choose-certificate-input {
@@ -36,4 +41,5 @@
   border-width: 1px;
   border-color: orange;
   border-radius: 10px;
+  max-width: 250px;
 }

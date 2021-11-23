@@ -35,7 +35,12 @@ function App() {
 
   return (
     <>
-      {isDialogVisible ? <FileSelector onDialogCloseClicked={() => {setDialogVisibility(!isDialogVisible)}}></FileSelector> : null}
+      { isDialogVisible ? 
+        <FileSelector 
+          onDialogCloseClicked={() => { setDialogVisibility(!isDialogVisible) }} 
+          onSelectCertificateClicked={() => { alert("File chosen") }}/> 
+          : null
+      }
       <div className="App">
         <h1 className="App-title">MOACERT v0.0.1</h1>
         <div className="center">
