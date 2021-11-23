@@ -1,0 +1,12 @@
+.File-selector-outer {
+  background-color: rgba(0, 0, 0, 0.365);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.File-selector-inner {
+  background-color: salmon;
+  width: 300px;
+  height: 200px;
+}
