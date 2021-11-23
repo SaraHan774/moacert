@@ -3,10 +3,10 @@ import "./App.css";
 import FileSelector from "./FileSelector/FileSelector";
 
 function App() {
-  const [showDialog, setShowDialog] = useState(false);
+  const [isDialogVisible, setDialogVisibility] = useState(false);
 
   const openFileSelector = () => {
-    setShowDialog(!showDialog);
+    setDialogVisibility(!isDialogVisible);
   };
 
   const onAddCertClick = () => {
@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      {showDialog ? <FileSelector></FileSelector> : null}
+      {isDialogVisible ? <FileSelector onDialogCloseClicked={() => {setDialogVisibility(!isDialogVisible)}}></FileSelector> : null}
       <div className="App">
         <h1 className="App-title">MOACERT v0.0.1</h1>
         <div className="center">

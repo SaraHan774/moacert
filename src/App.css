@@ -6,20 +6,24 @@
 
 .App-body {
   margin: 1rem;
-  border-style: double;
+  border-style: solid;
   padding: 1rem;
-  border-color: cadetblue;
+  border-color: royalblue;
   border-radius: 30px;
 }
 
 .App-link {
-  color: cadetblue;
+  color: orange;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
 }
 
 button {
-  color: cadetblue;
   font-size: medium;
   margin: 0.5rem;
+  font-family: 'EB Garamond', serif;
 }
 
 .center {
