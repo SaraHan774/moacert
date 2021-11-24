@@ -9,6 +9,10 @@ function App() {
     setDialogVisibility(!isDialogVisible);
   };
 
+  const onCertificateSelected = () => {
+    
+  }
+
   const onAddCertClick = () => {
     // open file explorer
     openFileSelector();
@@ -38,7 +42,8 @@ function App() {
       { isDialogVisible ? 
         <FileSelector 
           onDialogCloseClicked={() => { setDialogVisibility(!isDialogVisible) }} 
-          onSelectCertificateClicked={() => { alert("File chosen") }}/> 
+          onSelectCertificateClicked={() => onCertificateSelected()}
+          /> 
           : null
       }
       <div className="App">
